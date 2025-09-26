@@ -1,0 +1,76 @@
+header{
+    background-color: rgb(0, 0, 0);
+    padding: 0 10vw;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    border-bottom: 1px solid gray;
+}
+
+.nav-links{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    list-style: none;
+}
+
+/* alternative method; buy may not be responsive at smaller viewports */
+/* a{
+    margin: 0 20px;
+} */
+ .nav-link{
+    text-decoration: none;
+    color: grey;
+    text-transform: uppercase;
+ }
+
+ .nav-link:hover{
+    color: var(--primary-color)
+ }
+
+ .logo{
+    color: var(--primary-color);
+ }
+
+ .intro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+ }
+
+ .intro-text{
+    color: white;
+    height: 30vh;
+    /* 1st method for gaps between elements */
+    /* line-height: 3em; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    padding-bottom: 50px;
+ }
+
+ .my-img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+    border: 2px solid grey;
+ }
+
+ .my-heading{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+
+ #my-name{
+    color: var(--secondary-color);
+    font-family: monospace;
+    font-size: larger;
+}
