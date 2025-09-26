@@ -10,7 +10,94 @@
 }
 
 :root{
-    --primary-color: rgb(239,101,91);
-    --secondary-color:  rgb(44 ,154,58);
-    
+    --primary-color: #5B5FC7;
+    --secondary-color:  rgb(235, 247, 237);
+    --accent-color: #cfd0e9;
+
 }
+
+header{
+    background-color: rgb(0, 0, 0);
+    padding: 0 10vw;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    border-bottom: 1px solid gray;
+    height: 5vh;
+}
+
+.nav-links{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    list-style: none;
+}
+
+/* alternative method; buy may not be responsive at smaller viewports */
+/* a{
+    margin: 0 20px;
+} */
+ .nav-link{
+    text-decoration: none;
+    color: grey;
+    text-transform: uppercase;
+    padding: 1vh;
+ }
+
+ .nav-link:hover{
+    background-color: var(--primary-color);
+    color: white;
+    /* font-size: large; */
+    border-radius: 7px;
+ }
+
+ .logo{
+    color: var(--primary-color);
+ }
+
+ #menu-toggle{
+    display: none;
+}
+
+.menu-icon{
+    font-size: 30px;
+    display: none;
+}
+
+@media (max-width: 780px){ 
+
+
+ .menu-icon{
+    display: block;
+}
+
+.nav-links{
+    position: absolute;
+    top: 7vh;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.185);
+    border-radius: 0 0 20px 10px;
+    display: none;
+    /* display: none; */
+}
+
+.nav-links li{
+    padding: 15px 0;
+}
+
+.nav-link{
+    color: white;
+}
+/* When checkbox is checked, show menu */
+#menu-toggle:checked + .menu-icon + .nav-links{
+    display: flex;
+}
+}
+

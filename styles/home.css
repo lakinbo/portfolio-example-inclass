@@ -1,46 +1,11 @@
-header{
-    background-color: rgb(0, 0, 0);
-    padding: 0 10vw;
-}
-
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-    border-bottom: 1px solid gray;
-}
-
-.nav-links{
-    display: flex;
-    width: 60%;
-    justify-content: space-around;
-    list-style: none;
-}
-
-/* alternative method; buy may not be responsive at smaller viewports */
-/* a{
-    margin: 0 20px;
-} */
- .nav-link{
-    text-decoration: none;
-    color: grey;
-    text-transform: uppercase;
- }
-
- .nav-link:hover{
-    color: var(--primary-color)
- }
-
- .logo{
-    color: var(--primary-color);
- }
 
  .intro{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 85%;
+    padding:7vh 0;
+    gap: 20px;
  }
 
  .intro-text{
@@ -57,10 +22,11 @@ nav{
  }
 
  .my-img{
-    width: 200px;
+    min-width: 200px;
     height: 200px;
     object-fit: cover;
     object-position: top;
+    /* min-width: 200px */
     border-radius: 50%;
     border: 2px solid grey;
  }
@@ -72,5 +38,95 @@ nav{
  #my-name{
     color: var(--secondary-color);
     font-family: monospace;
-    font-size: larger;
+    font-size: 40px;
 }
+
+.btn-shape{
+    height: 40px;
+    padding: 0 30px;
+    border-radius: 7px;
+    font-size: 15px;
+    border: none;
+}
+
+.btns-intro{
+    display: flex;
+    gap: 20px;
+}
+
+.btn-orange{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.btn-orange:hover{
+    background-color:var(--accent-color);
+    color: black;
+}
+
+.btn-hollow{
+    background-color: black;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.btn-hollow:hover{
+    background-color:var(--accent-color);
+    color: black;
+}
+
+
+/* #menu-toggle{
+    display: none;
+} */
+
+/* .menu-icon{
+    font-size: 30px;
+    display: none;
+} */
+
+@media (max-width: 780px){ 
+
+ .intro{
+    flex-direction:column-reverse;
+    align-items: start;
+    justify-content: space-between;
+    width: 85%;
+    padding:7vh 0;
+ }
+
+ .my-img{
+    min-width: 150px;
+    height: 150px;
+ }
+
+ /* .menu-icon{
+    display: block;
+} */
+
+/* .nav-links{
+    position: absolute;
+    top: 7vh;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.185);
+    border-radius: 0 0 20px 10px;
+    display: none;
+} */
+
+/* .nav-links li{
+    padding: 15px 0;
+} */
+
+/* .nav-link{
+    color: white;
+} */
+/* When checkbox is checked, show menu */
+/* #menu-toggle:checked + .menu-icon + .nav-links{
+    display: flex;
+} */
+}
+
+
